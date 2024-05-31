@@ -55,6 +55,7 @@ extern {
     pub fn rtlsdr_get_freq_correction(dev: rtlsdr_dev_t) -> c_int;
 
     pub fn rtlsdr_get_tuner_type(dev: rtlsdr_dev_t) -> rtlsdr_tuner;
+    pub fn rtlsdr_set_bias_tee(dev: rtlsdr_dev_t, on: c_int) -> c_int;
 
     pub fn rtlsdr_get_tuner_gains(dev: rtlsdr_dev_t, gains: *mut c_int) -> c_int;
     pub fn rtlsdr_set_tuner_gain(dev: rtlsdr_dev_t, gain: c_int) -> c_int;
